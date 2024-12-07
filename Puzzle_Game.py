@@ -5,10 +5,10 @@ import random
 import os
 
 WIDTH, HEIGHT = 400, 400
-ROWS, COLS = 4, 4
+ROWS, COLS = 4, 4 #จำนวนแถวและคอลัมที่ต้องการแบ่ง
 TILE_SIZE = WIDTH // COLS
 FPS = 60
-WHITE = (255, 255, 255)
+WHITE = (255, 255, 255) 
 
 def load_and_split_image(image_path):
     image = pygame.image.load(image_path)
@@ -101,6 +101,6 @@ def main(image_path):
     pygame.quit()
 
 if __name__ == "__main__":
-    image_path = os.path.join(os.getcwd(),"D:/Users/MSI/Downloads/picture1.jpeg")
+    image_path = os.path.join(os.getcwd(),"D:/Users/MSI/Downloads/picture1.jpeg") #image_path = os.path.join(os.getcwd(),"ใส่pathของรูปที่ต้องการ")
     main(image_path)
 
